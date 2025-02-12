@@ -20,11 +20,19 @@ public class Trainers {
         return ruta;
     }
     
+    public String newHor(){
+        return horario;
+    }
+    
     public void getNam(String nombre){
         this.nombre = nombre;
     }
     
     public void getRut(String ruta){
         this.ruta = ruta;
+    }
+    
+    public void getHor(String horario){
+        this.horario = horario;
     }
 }
