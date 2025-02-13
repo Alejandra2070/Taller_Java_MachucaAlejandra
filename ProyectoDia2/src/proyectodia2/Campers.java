@@ -33,8 +33,14 @@ public class Campers {
         this.actividad1 = actividad1;
     }
     
+    public Campers(){}
+    
     public int getUser(){
         return usuario;
+    }
+    
+    public void setU(int usuario){
+        this.usuario = usuario;
     }
     
     public String getPass(){
@@ -73,9 +79,7 @@ public class Campers {
         return actividad1;
     }
     
-    public void setU(int usuario){
-        this.usuario = usuario;
-    }
+    
     
     public void setC(String contrasena){
         this.contrasena = contrasena;
@@ -119,6 +123,21 @@ public class Campers {
     
     @Override
     public String toString() {
-        return "Campers{" + "id=" + id + ", fecha=" + fecha + ", usuario=" + usuario + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion=" + direccion + ", acudiente=" + acudiente + ", numero_celular=" + numero_celular + ", numero_fijo=" + numero_fijo + ", estado=" + estado + ", riesgo=" + riesgo + ", grupo=" + grupo + ", actividad1=" + actividad1 + '}';
+        return "Campers{" + 
+                "id=" + id +
+                ", fecha=" + fecha + '\'' +
+                ", usuario=" + usuario + 
+                ", contrasena=" + contrasena + '\'' +
+                ", nombre=" + nombre + '\'' +
+                ", apellido=" + apellido + '\'' +
+                ", direccion=" + direccion + '\'' +
+                ", acudiente=" + acudiente + '\'' +
+                ", numero_celular=" + numero_celular + 
+                ", numero_fijo=" + numero_fijo + 
+                ", estado=" + estado + '\'' +
+                ", riesgo=" + riesgo + '\'' +
+                ", grupo=" + grupo + '\'' +
+                ", actividad1=" + actividad1 + '\'' +
+                '}';
     }
 } 

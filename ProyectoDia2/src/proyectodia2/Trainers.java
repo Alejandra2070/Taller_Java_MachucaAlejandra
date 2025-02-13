@@ -35,4 +35,15 @@ public class Trainers {
     public void getHor(String horario){
         this.horario = horario;
     }
+
+    @Override
+    public String toString() {
+        return "Trainers{" + 
+                "id=" + id + 
+                ", nombre=" + nombre + 
+                ", ruta=" + ruta + 
+                ", horario=" + horario + 
+                '}';
+    }
+    
 }
