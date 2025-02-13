@@ -27,7 +27,8 @@ public class ProyectoDia2 {
         
         if (opc == 1){
             System.out.println("----Menu Campers----");
-            while(true){
+            boolean salir1 = false;
+            while(salir1 == false){
                 System.out.println("1. Revisar mi informacion");
                 System.out.println("2. Actualizar mi informacion");
                 System.out.println("3. Salir del programa"); //---------------------------------------------
@@ -96,13 +97,18 @@ public class ProyectoDia2 {
                         }
                     case 3:
                         System.out.println("Hasta luego. :D");
+                        salir1=true;
                         break;
+                        
                 }
             } 
+            
         }
         else if (opc==2){
-            while(true){
-                System.out.println("-----Menu Trainers-----");
+            
+            System.out.println("-----Menu Trainers-----");
+            boolean salir2 = false;
+            while (salir2 == false){
                 System.out.println("1. Estado de los Campers");
                 System.out.println("2. Ruta de los Trainers");
                 System.out.println("3. Actualizar informacion de Trainer");
@@ -140,22 +146,26 @@ public class ProyectoDia2 {
                             System.out.println("El nombre fue actualizado a: " + trainer1.newName());
                         }
                         break;
-                        
+
                     case 4:
                         System.out.println("Esta es la informacion de los Trainers: ");
                         System.out.println(trainer1);
                         break;
-                        
+
                     case 5: 
                         System.out.println("Gracias por utilizar nuestro programa. Vuelve pronto! :D");
+                        salir2=true;
                         break;
                 }
             }
+                
+            
             
         }
         else if (opc==3){
-            while(true){
-                System.out.println("-----Menu Coordinador-----");
+            System.out.println("-----Menu Coordinador-----");
+            boolean salir3 = false;
+            while (salir3 == false){
                 System.out.println("1. Ver Campers");
                 System.out.println("2. Registrar Campers");
                 System.out.println("3. Actualizar datos del Camper");
@@ -168,6 +178,7 @@ public class ProyectoDia2 {
                 System.out.println("10. Registrar Coordinador");
                 System.out.println("11. Actualizar informacion del Coordinador");
                 System.out.println("12. Eliminar Coordinador");
+                System.out.println("13. Salir del programa");
                 System.out.println("Elige una de nuestras opciones: ");
                 int opc3 = scanner.nextInt();
 
@@ -287,7 +298,7 @@ public class ProyectoDia2 {
                                 camper1.setAct(nuevaAct);
                                 System.out.println("La actividad fue actualizada correctamente a: " + camper1.getAct());
                                 break;
-                        
+
                         }    
                     case 4:
                         System.out.println("¿Que camper quieres eliminar? Ingresa su nombre: ");
@@ -326,7 +337,7 @@ public class ProyectoDia2 {
                         Trainers nuevoTrainer = new Trainers (idT, nombreT, rutaT, horario);
 
                         listaTrainers.add(nuevoTrainer);
-                        
+
                         break;
                     case 7:
                         System.out.println("¿Que te gustaria actualizar?: ");
@@ -433,8 +444,15 @@ public class ProyectoDia2 {
                             }
                         }
                         break;
-                } 
+                    case 13:
+                        System.out.println("Gracias por usar nuestro programa. Vuelve pronto! :D");
+                        salir3 = true;
+                        break;
+                }
             }
+        }
+        else if(opc == 4){
+            System.out.println("Gracias por utilizar nuestro programa. Vuelve pronto! :D");
         }
     }
 }
