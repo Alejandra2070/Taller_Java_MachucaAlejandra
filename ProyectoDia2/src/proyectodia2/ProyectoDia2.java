@@ -31,7 +31,7 @@ public class ProyectoDia2 {
             while(salir1 == false){
                 System.out.println("1. Revisar mi informacion");
                 System.out.println("2. Actualizar mi informacion");
-                System.out.println("3. Salir del programa"); //---------------------------------------------
+                System.out.println("3. Salir del programa");
                 System.out.println("Elige una de nuestras opciones: ");
 
                 int opc1 = scanner.nextInt();
@@ -98,8 +98,7 @@ public class ProyectoDia2 {
                     case 3:
                         System.out.println("Hasta luego. :D");
                         salir1=true;
-                        break;
-                        
+                        break;    
                 }
             } 
             
@@ -113,7 +112,7 @@ public class ProyectoDia2 {
                 System.out.println("2. Ruta de los Trainers");
                 System.out.println("3. Actualizar informacion de Trainer");
                 System.out.println("4. Ver informacion de los Trainers");
-                System.out.println("5. Salir del programa");//-------------------------------------------------------
+                System.out.println("5. Salir del programa");
                 System.out.println("Elige una de nuestras opciones: ");
 
                 int opc2 = scanner.nextInt();
@@ -157,10 +156,7 @@ public class ProyectoDia2 {
                         salir2=true;
                         break;
                 }
-            }
-                
-            
-            
+            }   
         }
         else if (opc==3){
             System.out.println("-----Menu Coordinador-----");
