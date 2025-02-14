@@ -6,9 +6,9 @@ public class Concierto {
     String artista;
     String fecha;
     String lugar;
-    double precioBase;
+    int precioBase;
 
-    public Concierto(int id, String nombre, String artista, String fecha, String lugar, double precioBase) {
+    public Concierto(int id, String nombre, String artista, String fecha, String lugar, int precioBase) {
         this.id = id;
         this.nombre = nombre;
         this.artista = artista;

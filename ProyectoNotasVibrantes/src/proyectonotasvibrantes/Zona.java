@@ -4,9 +4,9 @@ public class Zona {
     int id;
     String nombreZona;
     int capacidad;
-    long precioAdicional;
+    int precioAdicional;
 
-    public Zona(int id, String nombreZona, int capacidad, long precioAdicional) {
+    public Zona(int id, String nombreZona, int capacidad, int precioAdicional) {
         this.id = id;
         this.nombreZona = nombreZona;
         this.capacidad = capacidad;

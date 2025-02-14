@@ -1,20 +1,24 @@
 package proyectonotasvibrantes;
 
+import java.time.LocalDate;
+
 public class Ticket {
+    static int contTicket=0;
     int id;
     int id_cliente;
     int id_concierto;
-    String zona;
+    int zona;
     long precioFinal;
-    String fechaCompra;
+    LocalDate fechaCompra;
 
-    public Ticket(int id, int id_cliente, int id_concierto, String zona, long precioFinal, String fechaCompra) {
-        this.id = id;
+    public Ticket(int id_cliente, int id_concierto, int zona, int precioF, int precioA) {
+        contTicket=contTicket+1;
+        this.id = contTicket;
         this.id_cliente = id_cliente;
         this.id_concierto = id_concierto;
         this.zona = zona;
-        this.precioFinal = precioFinal;
-        this.fechaCompra = fechaCompra;
+        this.precioFinal = precioF + precioA;
+        this.fechaCompra = LocalDate.now();
     }
 
     @Override

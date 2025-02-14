@@ -5,9 +5,9 @@ public class Cliente {
     String nombre;
     String apellido;
     String correo;
-    int telefono;
+    long telefono;
 
-    public Cliente(int id, String nombre, String apellido, String correo, int telefono) {
+    public Cliente(int id, String nombre, String apellido, String correo, long telefono) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
